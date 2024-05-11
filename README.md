@@ -2,7 +2,7 @@
 
 * Using Java 13 for this project
 
-1) This project provides a RESTful API for user authentication using JSON Web Tokens (JWT). It includes an endpoint for generating JWT tokens based on user credentials. For accessing different api in this project you have to create jwt token first by this API then use it to different access another API's.
+1) This project provides a RESTful API for user authentication using JSON Web Tokens (JWT). It includes an endpoint for generating JWT tokens based on user credentials. For accessing different api in this project you have to create jwt token first by this API then use it to access different another API's. While given token please add "Bearer " before it. 
 
 Endpoints:
 
