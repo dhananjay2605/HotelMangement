@@ -1,5 +1,6 @@
 package com.example.HotelMangement.Service;
 
+import com.example.HotelMangement.Exception.CustomException;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -14,6 +15,6 @@ public class CustomUserDetailService implements UserDetailsService {
         if (username.equals("Dhananjay"))
             return new User("Dhananjay","Dhananjay", new ArrayList<>());
         else
-            throw new UsernameNotFoundException("User not found");
+            throw new CustomException("User not found");
     }
 }
